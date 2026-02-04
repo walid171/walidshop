@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Shop Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    a.button {
+      text-decoration: none;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      font-weight: bold;
+      color: white;
+      background: #25D366;
+    }
+    a.call { background: #3b82f6; }
+    a.email { background: #f59e0b; }
+    a.map { background: #8b5cf6; }
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    .info-box {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>My Shop Name</h1>
+  <p>Professional services & customer support</p>
+</header>
+
+<div class="container">
+
+  <div class="buttons">
+    <a class="button" href="https://wa.me/491234567890" target="_blank">WhatsApp</a>
+    <a class="button call" href="tel:+491234567890">Call Us</a>
+    <a class="button email" href="mailto:info@example.com">Email</a>
+    <a class="button map" href="https://maps.google.com/?q=Berlin" target="_blank">Location</a>
+  </div>
+
+  <div class="info-box">
+    <h2>Address</h2>
+    <p>Berlin, Germany</p>
+
+    <h2>Opening Hours</h2>
+    <p>Monday - Saturday: 10:00 AM - 8:00 PM</p>
+    <p>Sunday: Closed</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 My Shop. All rights reserved.
+</footer>
+
+</body>
+</html>
