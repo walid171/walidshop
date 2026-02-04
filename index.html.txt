@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>???? ?????</title>
+  <meta name="description" content="???? ???? ?????? ?? ????? ??????? ?????????." />
+  <style>
+    :root{--bg:#0b1220;--card:#121b2f;--text:#e9eefc;--muted:#a9b4d0;--accent:#3b82f6;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Tahoma,Arial; background:linear-gradient(180deg,#0b1220,#070b14); color:var(--text)}
+    .wrap{max-width:980px;margin:0 auto;padding:28px}
+    .hero{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .brand{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);padding:18px 18px;border-radius:16px;flex:1;min-width:280px}
+    h1{margin:0 0 8px;font-size:28px}
+    p{margin:0;color:var(--muted);line-height:1.8}
+    .card{margin-top:18px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);padding:18px;border-radius:16px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    @media (max-width:680px){.grid{grid-template-columns:1fr}}
+    .btn{
+      display:flex;align-items:center;justify-content:center;gap:10px;
+      padding:12px 14px;border-radius:14px;text-decoration:none;
+      background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.35);
+      color:var(--text);font-weight:700
+    }
+    .btn:hover{background:rgba(59,130,246,.18)}
+    .btn.whatsapp{background:rgba(34,197,94,.12);border-color:rgba(34,197,94,.35)}
+    .btn.call{background:rgba(168,85,247,.12);border-color:rgba(168,85,247,.35)}
+    .btn.map{background:rgba(245,158,11,.12);border-color:rgba(245,158,11,.35)}
+    .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .pill{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);color:var(--muted);font-size:13px}
+    footer{margin-top:18px;color:var(--muted);font-size:12px;text-align:center}
+    .label{color:var(--muted);font-size:13px;margin:0 0 6px}
+    .value{margin:0;font-weight:700}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="brand">
+        <h1>??? ????? ???</h1>
+        <p>??? ???? ?? ????? ????? (????: ?????? ???? ?????? ????? ?????...).</p>
+        <div class="row">
+          <span class="pill">???? ?????</span>
+          <span class="pill">????? ??????</span>
+          <span class="pill">??? ??????</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="label">????? ???? ?????</p>
+      <div class="grid" style="margin-top:10px">
+        <!-- ???? ??? ?????? ??? -->
+        <a class="btn call" href="tel:+491234567890">?? ????? ?????</a>
+
+        <!-- ???? ??? ???????? ????? ????? ???? + ????? ?????? -->
+        <a class="btn whatsapp" target="_blank"
+           href="https://wa.me/491234567890?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A8%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85">
+          ?? ??????
+        </a>
+
+        <!-- ???? ??????? ??? -->
+        <a class="btn" href="mailto:info@example.com">?? ???? ????????</a>
+
+        <!-- ?? ???? Google Maps ????? ????? -->
+        <a class="btn map" target="_blank" href="https://maps.google.com/?q=Rheinlanddamm%20199,%2044139%20Dortmund">
+          ?? ?????? ??? ???????
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="label">???????</p>
+      <p class="value">???? ????? ????? ??? (????? ?????)</p>
+
+      <div style="height:10px"></div>
+
+      <p class="label">????? ??????</p>
+      <p class="value">?????–??????: 10:00 - 20:00 | ??????: ????</p>
+    </div>
+
+    <footer>© <span id="y"></span> ??? ?????. ???? ?????? ??????.</footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
